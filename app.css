@@ -2166,3 +2166,123 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 }
 /*/----------Navigation margin fix END-----------/*/
+
+/*/---------Featured testimonial styling---------/*/
+.student-testimonial {
+  height: 340px;
+  background-size: cover;
+  background-position: 50%;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  margin: 70px 0;
+}
+
+.student-testimonial:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000000;
+  background: -webkit-radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0));
+  background: -o-radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0));
+  background: -moz-radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0));
+  background: radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0));
+}
+
+.profile-image {
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 0.3em black;
+  left: 50%;
+  margin-left: -50px;
+  top: -50px;
+}
+
+.testimonial-container {
+  height: 100%;
+}
+
+.student-quote {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 20px;
+  line-height: 1.375;
+  font-family: 'Muller', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  width: 30%;
+  left: 35%;
+  text-shadow: 0 0 0.3em black;
+  text-align: left;
+}
+
+.student-quote::after {
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -60px;
+  margin-top: -4px;
+  font-size: 100px;
+  font-family: 'URW Antiqua Regular', Times, 'Times New Roman', serif;
+  font-weight: 500;
+}
+
+.student-name {
+  font-size: 18px;
+  line-height: 1.375;
+  font-family: 'Muller', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 0 0 0.3em black;
+  margin: 20px 0 0 0;
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+.student-quote {
+  width: 40%;
+  left: 30%;
+}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 900px) {
+.student-quote {
+  width: 50%;
+  left: 25%;
+}
+}
+
+@media only screen and (max-width: 899px) and (min-width: 580px) {
+.student-quote {
+  width: 70%;
+  left: 15%;
+}
+}
+
+@media only screen and (max-width: 899px) and (min-width: 580px) {
+.student-quote {
+  width: 70%;
+  left: 15%;
+}
+}
+
+@media only screen and (max-width: 579px) {
+.student-quote {
+  width: 70%;
+  left: 15%;
+  font-size: 16px;
+}
+.student-name {
+ font-size: 16px;
+}
+}
+/*/---------Featured testimonial styling END---------/*/
